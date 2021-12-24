@@ -461,6 +461,7 @@ header .user_name {
     padding: 5px 15px;
     border-radius: 4px;
     cursor: pointer;
+    width: 70px;
 }
 
 .card_info_box .row {
@@ -851,7 +852,8 @@ footer p span {
         height: 30px;
         color: transparent;
         background-color: transparent;
-        border: 1px solid rgba(0, 0, 0, 0.6);
+        /*        border: 1px solid rgba(0, 0, 0, 0.6);*/
+        border: none;
         border-radius: 4px;
         background-image: url(../img/left-arrow.png);
         background-repeat: no-repeat;
@@ -866,7 +868,8 @@ footer p span {
         height: 30px;
         color: transparent;
         background-color: transparent;
-        border: 1px solid rgba(0, 0, 0, 0.6);
+        /*        border: 1px solid rgba(0, 0, 0, 0.6);*/
+        border: none;
         border-radius: 4px;
         background-image: url(../img/right-arrow.png);
         background-repeat: no-repeat;
@@ -902,6 +905,38 @@ footer p span {
 
     .main .slider_content .content {
         display: none;
+    }
+
+    .slick-dots {
+        display: flex;
+        position: absolute;
+        left: 0%;
+        bottom: 10px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slick-dots li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .slick-dots button {
+        color: transparent;
+        background-color: transparent;
+        border: none;
+        width: 8px;
+        height: 8px;
+        background-color: rgba(0, 0, 0, 0.4);
+        margin: 0 5px;
+        border-radius: 50%;
+    }
+
+    .slick-dots li.slick-active button {
+        background-color: black;
     }
 
 }
