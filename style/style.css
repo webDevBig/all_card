@@ -488,6 +488,15 @@ header .user_name {
     display: flex;
 }
 
+.main .slider_content,
+.main .slider_content:active,
+.main .slider_content:focus
+    {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
 .slider_box {
     width: 100%;
     display: flex;
