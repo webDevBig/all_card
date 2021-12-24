@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>BLACK PEARL CARD</title>
-    <link rel="stylesheet" href="style/splide.min.css">
+    <!--    <link rel="stylesheet" href="style/splide.min.css">-->
+    <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="style/style.css">
 </head>
 
@@ -18,19 +21,26 @@
                     <img alt="logo" src="img/logo.png">
                     BLACK PEARL CARD
                 </a>
+                <div class="menu"> <a href="" class="menu_item">Overview</a>
+                    <a href="" class="menu_item active">Payments</a>
+                    <a href="" class="menu_item">Cards</a>
+                    <a href="" class="menu_item">Account</a>
+                    <a href="" class="menu_item">System</a>
+                    <a href="" class="menu_item">Business</a>
+                </div>
                 <div class="menu">
                     <div class="user_drop_down">
-                        <img alt="user" src="img/user_icon.png" class="open_drop_down">
+                        <div class="user_box">
+                            <p class="user_name">Matheo Peterson</p>
+                            <img alt="user" src="img/user_icon.png" class="open_drop_down">
+                        </div>
+
                         <div class="drop_down">
                             <a href="" class="menu_item">Account settings</a>
                             <a href="" class="menu_item">Logout</a>
                         </div>
                     </div>
-                    <!--
-                    <a href="" class="menu_item">Sign-up</a>
-                    <a href="" class="menu_item">Login</a>
-                    <a href="" class="menu_item">Check card balance</a>
--->
+
                 </div>
             </div>
             <div class="mobile_menu">
@@ -43,179 +53,486 @@
                 </label>
                 <nav>
                     <ul>
-                        <li><a href="" class="menu_item">Sign-up</a></li>
-                        <li><a href="" class="menu_item">Login</a></li>
-                        <li><a href="" class="menu_item">Check card balance</a></li>
+                        <li><a href="" class="menu_item">Overview</a></li>
+                        <li><a href="" class="menu_item">Payments</a></li>
+                        <li><a href="" class="menu_item">Cards</a></li>
+                        <li><a href="" class="menu_item">Account</a></li>
+                        <li><a href="" class="menu_item">System</a></li>
+                        <li><a href="" class="menu_item">Business</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
         <section class="main">
-            <div class="slider_section">
-                <div class="slider_header">
-                    <p class="text">Your cards</p>
-                    <a class="add">Add new
-                        <span>+</span></a>
-                </div>
-                <div class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <div class="slider_content show">
-                                    <div class="content">
-                                        <div class="price_box">
-                                            <p class="price">4924.<span>42</span></p>
-                                            <p class="currency">usd</p>
-                                        </div>
-                                        <div class="card_info">
-                                            <p class="part_card_number">.... 3481</p>
-                                            <img alt="" src="img/visa_logos_dark.png" class="card_type">
-                                        </div>
-                                    </div>
-                                    <div class="active_card">
-                                        <div class="card_header">
-                                            <div class="logo"><img alt="logo" src="img/logo.png"> BLACK PEARL CARD</div>
-                                            <p class="balance">$200</p>
-                                        </div>
-                                        <p class="card_number">6551 9809 3223 1567</p>
-                                        <div class="card_footer">
-                                            <div class="ex_date_box">
-                                                <p class="card_name">GOOD THRU</p>
-                                                <p class="ex_date">10/25</p>
-                                            </div>
-                                            <img alt="" src="img/VISA.png" class="cars_type_img">
-                                        </div>
-                                    </div>
-                                    <p class="balance_mobile">Remaining Balance: $200</p>
+            <div class="slider_box">
+
+                <div>
+                    <div class="slider_header">
+                        <p class="text">Your cards</p>
+                        <a class="add">Add new
+                            <span>+</span></a>
+                    </div>
+                    <div class="slider slider-nav">
+                        <div class="slider_content show">
+                            <div class="content">
+                                <div class="price_box">
+                                    <p class="price">4924.<span>42</span></p>
+                                    <p class="currency">usd</p>
                                 </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div class="slider_content hide">
-                                    <div class="content">
-                                        <div class="price_box">
-                                            <p class="price">4924.<span>42</span></p>
-                                            <p class="currency">usd</p>
-                                        </div>
-                                        <div class="card_info">
-                                            <p class="part_card_number">.... 3481</p>
-                                            <img alt="" src="img/visa_logos_dark.png" class="card_type">
-                                        </div>
-                                    </div>
-                                    <div class="active_card">
-                                        <div class="card_header">
-                                            <div class="logo"><img alt="logo" src="img/logo.png"> BLACK PEARL CARD</div>
-                                            <p class="balance">$200</p>
-                                        </div>
-                                        <p class="card_number">6551 9809 3223 1567</p>
-                                        <div class="card_footer">
-                                            <div class="ex_date_box">
-                                                <p class="card_name">GOOD THRU</p>
-                                                <p class="ex_date">10/25</p>
-                                            </div>
-                                            <img alt="" src="img/VISA.png" class="cars_type_img">
-                                        </div>
-                                    </div>
-                                    <p class="balance_mobile">Remaining Balance: $200</p>
+                                <div class="card_info">
+                                    <p class="part_card_number">.... 3481</p>
+                                    <img alt="" src="img/VISA.png" class="card_type">
                                 </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div class="slider_content hide">
-                                    <div class="content">
-                                        <div class="price_box">
-                                            <p class="price">820.<span>02</span></p>
-                                            <p class="currency">gbp</p>
-                                        </div>
-                                        <div class="card_info">
-                                            <p class="part_card_number">.... 1567</p>
-                                            <img alt="" src="img/visa_logos_dark.png" class="card_type">
-                                        </div>
-                                    </div>
-                                    <div class="active_card">
-                                        <div class="card_header">
-                                            <div class="logo"><img alt="logo" src="img/logo.png"> BLACK PEARL CARD</div>
-                                            <p class="balance">$200</p>
-                                        </div>
-                                        <p class="card_number">6551 9809 3223 1567</p>
-                                        <div class="card_footer">
-                                            <div class="ex_date_box">
-                                                <p class="card_name">GOOD THRU</p>
-                                                <p class="ex_date">10/25</p>
-                                            </div>
-                                            <img alt="" src="img/VISA.png" class="cars_type_img">
-                                        </div>
-                                    </div>
-                                    <p class="balance_mobile">Remaining Balance: $200</p>
+                            </div>
+                            <div class="active_card">
+                                <div class="card_header">
+                                    <div class="logo"><img alt="logo" src="img/logo.png"> BLACK PEARL CARD</div>
+                                    <p class="balance">$200</p>
                                 </div>
-                            </li>
-                        </ul>
+                                <p class="card_number">6551 9809 3223 1567</p>
+                                <div class="card_footer">
+                                    <div class="ex_date_box">
+                                        <p class="card_name">GOOD THRU</p>
+                                        <p class="ex_date">10/25</p>
+                                    </div>
+                                    <img alt="" src="img/VISA.png" class="cars_type_img">
+                                </div>
+                            </div>
+                            <div class="card_info_box">
+                                <div class="header">
+                                    <h1>Card info</h1>
+                                    <input type="button" value="Details" class="details">
+                                </div>
+                                <div class="row">
+                                    <p class="title">Card Number</p>
+                                    <p class="text">.... 3481</p>
+                                </div>
+                                <div class="row">
+                                    <p class="title">Status</p>
+                                    <p class="text">Active</p>
+                                </div>
+                                <div class="row">
+                                    <p class="title">Currency</p>
+                                    <p class="text">Usd</p>
+                                </div>
+                                <div class="row">
+                                    <p class="title">Balance</p>
+                                    <p class="text">$2,050.22</p>
+                                </div>
+                            </div>
+                            <p class="balance_mobile">Remaining Balance: $200</p>
+                        </div>
+                        <div class="slider_content">
+                            <div class="content">
+                                <div class="price_box">
+                                    <p class="price">4924.<span>42</span></p>
+                                    <p class="currency">usd</p>
+                                </div>
+                                <div class="card_info">
+                                    <p class="part_card_number">.... 3481</p>
+                                    <img alt="" src="img/VISA.png" class="card_type">
+                                </div>
+                            </div>
+                            <div class="active_card">
+                                <div class="card_header">
+                                    <div class="logo"><img alt="logo" src="img/logo.png"> BLACK PEARL CARD</div>
+                                    <p class="balance">$200</p>
+                                </div>
+                                <p class="card_number">6551 9809 3223 1567</p>
+                                <div class="card_footer">
+                                    <div class="ex_date_box">
+                                        <p class="card_name">GOOD THRU</p>
+                                        <p class="ex_date">10/25</p>
+                                    </div>
+                                    <img alt="" src="img/VISA.png" class="cars_type_img">
+                                </div>
+                            </div>
+                            <div class="card_info_box">
+                                <div class="header">
+                                    <h1>Card info</h1>
+                                    <input type="button" value="Details" class="details">
+                                </div>
+                                <div class="row">
+                                    <p class="title">Card Number</p>
+                                    <p class="text">.... 3481</p>
+                                </div>
+                                <div class="row">
+                                    <p class="title">Status</p>
+                                    <p class="text">Active</p>
+                                </div>
+                                <div class="row">
+                                    <p class="title">Currency</p>
+                                    <p class="text">Usd</p>
+                                </div>
+                                <div class="row">
+                                    <p class="title">Balance</p>
+                                    <p class="text">$2,050.22</p>
+                                </div>
+                            </div>
+                            <p class="balance_mobile">Remaining Balance: $200</p>
+                        </div>
+                        <div class="slider_content">
+                            <div class="content">
+                                <div class="price_box">
+                                    <p class="price">4924.<span>42</span></p>
+                                    <p class="currency">usd</p>
+                                </div>
+                                <div class="card_info">
+                                    <p class="part_card_number">.... 3481</p>
+                                    <img alt="" src="img/VISA.png" class="card_type">
+                                </div>
+                            </div>
+                            <div class="active_card">
+                                <div class="card_header">
+                                    <div class="logo"><img alt="logo" src="img/logo.png"> BLACK PEARL CARD</div>
+                                    <p class="balance">$200</p>
+                                </div>
+                                <p class="card_number">6551 9809 3223 1567</p>
+                                <div class="card_footer">
+                                    <div class="ex_date_box">
+                                        <p class="card_name">GOOD THRU</p>
+                                        <p class="ex_date">10/25</p>
+                                    </div>
+                                    <img alt="" src="img/VISA.png" class="cars_type_img">
+                                </div>
+                            </div>
+                            <div class="card_info_box">
+                                <div class="header">
+                                    <h1>Card info</h1>
+                                    <input type="button" value="Details" class="details">
+                                </div>
+                                <div class="row">
+                                    <p class="title">Card Number</p>
+                                    <p class="text">.... 3481</p>
+                                </div>
+                                <div class="row">
+                                    <p class="title">Status</p>
+                                    <p class="text">Active</p>
+                                </div>
+                                <div class="row">
+                                    <p class="title">Currency</p>
+                                    <p class="text">Usd</p>
+                                </div>
+                                <div class="row">
+                                    <p class="title">Balance</p>
+                                    <p class="text">$2,050.22</p>
+                                </div>
+                            </div>
+                            <p class="balance_mobile">Remaining Balance: $200</p>
+                        </div>
                     </div>
                 </div>
+
+
+                <div class="slider slider-for">
+                    <div>
+                        <div class="accounts_box">
+                            <div class="header">
+                                <h1>Accounts and cards</h1>
+                                <p class="title">recently created</p>
+                            </div>
+                            <div class="row_info">
+                                <div class="card_name">
+                                    <div class="card_img"></div>
+                                    <p class="name">Card Pro</p>
+                                </div>
+                                <p class="note">From $ 4000. Find out the solutions in 2 minutes. No% up to 55 days. Online applications. Free shipping</p>
+                                <div class="payment_box">
+                                    <div class="payment">
+                                        <p class="title">Monthly payment</p>
+                                        <p class="price">$ 5,000 <span>$ 3,000</span></p>
+                                    </div>
+                                    <div class="rate_box">
+                                        <p class="title">Interest rate</p>
+                                        <p class="rate">5,5-12% <span>16%</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row_info">
+                                <div class="payment_box">
+                                    <div class="payment">
+                                        <p class="title">Money with drawal</p>
+                                        <p class="price">$ 15,000 <span>$ 1,000</span></p>
+                                    </div>
+                                    <div class="rate_box">
+                                        <p class="title">Service</p>
+                                        <p class="rate">$ 35.00 <span>$45</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="transactions_box">
+                            <div class="header">
+                                <h1>Recent transactions</h1>
+                                <select class="select">
+                                    <option>All</option>
+                                    <option>All</option>
+                                </select>
+                            </div>
+                            <p class="title">Today</p>
+                            <div class="row_info">
+                                <div class="company_box">
+                                    <div class="company_logo"></div>
+                                    <div class="company_info">
+                                        <p class="company_name">Tinder</p>
+                                        <p class="date">10.09.20</p>
+                                    </div>
+                                </div>
+                                <p class="spend_balance">-$15.00</p>
+                            </div>
+                            <div class="row_info">
+                                <div class="company_box">
+                                    <div class="company_logo" style="background-color: aqua"></div>
+                                    <div class="company_info">
+                                        <p class="company_name">Apple music</p>
+                                        <p class="date">10.09.20</p>
+                                    </div>
+                                </div>
+                                <p class="spend_balance">-$60.00</p>
+                            </div>
+                            <div class="row_info">
+                                <div class="company_box">
+                                    <div class="company_logo" style="background-color:blue"></div>
+                                    <div class="company_info">
+                                        <p class="company_name">Walmart</p>
+                                        <p class="date">10.09.20</p>
+                                    </div>
+                                </div>
+                                <p class="spend_balance">-$250.90</p>
+                            </div>
+                            <p class="title">Yesterday</p>
+                            <div class="row_info">
+                                <div class="company_box">
+                                    <div class="company_logo"></div>
+                                    <div class="company_info">
+                                        <p class="company_name">Tinder</p>
+                                        <p class="date">10.09.20</p>
+                                    </div>
+                                </div>
+                                <p class="spend_balance">-$15.00</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="accounts_box">
+                            <div class="header">
+                                <h1>Accounts and cards</h1>
+                                <p class="title">recently created</p>
+                            </div>
+                            <div class="row_info">
+                                <div class="card_name">
+                                    <div class="card_img"></div>
+                                    <p class="name">Card Pro</p>
+                                </div>
+                                <p class="note">From $ 4000. Find out the solutions in 2 minutes. No% up to 55 days. Online applications. Free shipping</p>
+                                <div class="payment_box">
+                                    <div class="payment">
+                                        <p class="title">Monthly payment</p>
+                                        <p class="price">$ 5,000 <span>$ 3,000</span></p>
+                                    </div>
+                                    <div class="rate_box">
+                                        <p class="title">Interest rate</p>
+                                        <p class="rate">5,5-12% <span>16%</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row_info">
+                                <div class="payment_box">
+                                    <div class="payment">
+                                        <p class="title">Money with drawal</p>
+                                        <p class="price">$ 15,000 <span>$ 1,000</span></p>
+                                    </div>
+                                    <div class="rate_box">
+                                        <p class="title">Service</p>
+                                        <p class="rate">$ 35.00 <span>$45</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="transactions_box">
+                            <div class="header">
+                                <h1>Recent transactions</h1>
+                                <select class="select">
+                                    <option>All</option>
+                                    <option>All</option>
+                                </select>
+                            </div>
+                            <p class="title">Today</p>
+                            <div class="row_info">
+                                <div class="company_box">
+                                    <div class="company_logo"></div>
+                                    <div class="company_info">
+                                        <p class="company_name">Tinder</p>
+                                        <p class="date">10.09.20</p>
+                                    </div>
+                                </div>
+                                <p class="spend_balance">-$15.00</p>
+                            </div>
+                            <div class="row_info">
+                                <div class="company_box">
+                                    <div class="company_logo" style="background-color: aqua"></div>
+                                    <div class="company_info">
+                                        <p class="company_name">Apple music</p>
+                                        <p class="date">10.09.20</p>
+                                    </div>
+                                </div>
+                                <p class="spend_balance">-$60.00</p>
+                            </div>
+                            <div class="row_info">
+                                <div class="company_box">
+                                    <div class="company_logo" style="background-color:blue"></div>
+                                    <div class="company_info">
+                                        <p class="company_name">Walmart</p>
+                                        <p class="date">10.09.20</p>
+                                    </div>
+                                </div>
+                                <p class="spend_balance">-$250.90</p>
+                            </div>
+                            <p class="title">Yesterday</p>
+                            <div class="row_info">
+                                <div class="company_box">
+                                    <div class="company_logo"></div>
+                                    <div class="company_info">
+                                        <p class="company_name">Tinder</p>
+                                        <p class="date">10.09.20</p>
+                                    </div>
+                                </div>
+                                <p class="spend_balance">-$15.00</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="accounts_box">
+                            <div class="header">
+                                <h1>Accounts and cards</h1>
+                                <p class="title">recently created</p>
+                            </div>
+                            <div class="row_info">
+                                <div class="card_name">
+                                    <div class="card_img"></div>
+                                    <p class="name">Card Pro</p>
+                                </div>
+                                <p class="note">From $ 4000. Find out the solutions in 2 minutes. No% up to 55 days. Online applications. Free shipping</p>
+                                <div class="payment_box">
+                                    <div class="payment">
+                                        <p class="title">Monthly payment</p>
+                                        <p class="price">$ 5,000 <span>$ 3,000</span></p>
+                                    </div>
+                                    <div class="rate_box">
+                                        <p class="title">Interest rate</p>
+                                        <p class="rate">5,5-12% <span>16%</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row_info">
+                                <div class="payment_box">
+                                    <div class="payment">
+                                        <p class="title">Money with drawal</p>
+                                        <p class="price">$ 15,000 <span>$ 1,000</span></p>
+                                    </div>
+                                    <div class="rate_box">
+                                        <p class="title">Service</p>
+                                        <p class="rate">$ 35.00 <span>$45</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="transactions_box">
+                            <div class="header">
+                                <h1>Recent transactions</h1>
+                                <select class="select">
+                                    <option>All</option>
+                                    <option>All</option>
+                                </select>
+                            </div>
+                            <p class="title">Today</p>
+                            <div class="row_info">
+                                <div class="company_box">
+                                    <div class="company_logo"></div>
+                                    <div class="company_info">
+                                        <p class="company_name">Tinder</p>
+                                        <p class="date">10.09.20</p>
+                                    </div>
+                                </div>
+                                <p class="spend_balance">-$15.00</p>
+                            </div>
+                            <div class="row_info">
+                                <div class="company_box">
+                                    <div class="company_logo" style="background-color: aqua"></div>
+                                    <div class="company_info">
+                                        <p class="company_name">Apple music</p>
+                                        <p class="date">10.09.20</p>
+                                    </div>
+                                </div>
+                                <p class="spend_balance">-$60.00</p>
+                            </div>
+                            <div class="row_info">
+                                <div class="company_box">
+                                    <div class="company_logo" style="background-color:blue"></div>
+                                    <div class="company_info">
+                                        <p class="company_name">Walmart</p>
+                                        <p class="date">10.09.20</p>
+                                    </div>
+                                </div>
+                                <p class="spend_balance">-$250.90</p>
+                            </div>
+                            <p class="title">Yesterday</p>
+                            <div class="row_info">
+                                <div class="company_box">
+                                    <div class="company_logo"></div>
+                                    <div class="company_info">
+                                        <p class="company_name">Tinder</p>
+                                        <p class="date">10.09.20</p>
+                                    </div>
+                                </div>
+                                <p class="spend_balance">-$15.00</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
-            <div class="transactions_box">
-                <div class="transactions_content">
-                    <h1 class="title">Transactions</h1>
-                    <div class="row">
-                        <p class="date text_medium">Dec 09 2021</p>
-                        <p class="text_medium return">Sample Return</p>
-                        <p class="text_regular">Settling</p>
-                        <p class="text_bold price_back">$-58.15</p>
-                    </div>
-                    <div class="row">
-                        <p class="date text_medium">Nov 05 2021</p>
-                        <p class="text_medium return">Sample Return</p>
-                        <p class="text_regular">Settling</p>
-                        <p class="text_bold price_back">$-89.05</p>
-                    </div>
-                </div>
-                <button class="see_all">See All Transactions</button>
-            </div>
+
         </section>
+        
+        <footer>
+            <h1>Almeria <span>©</span></h1>
+            <p>Almeria <span>©</span> All right recerved 2021</p>
+        </footer>
     </div>
 
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="script/splide.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var splide = new Splide('.splide', {
-                direction: 'ttb',
-                perPage: 3,
-                isNavigation: false,
-                heightRatio: 1,
-                pagination: false,
-                arrows: false,
-                drag: false,
-                breakpoints: {
-                    800: {
-                        perPage: 1,
-                        perMove: 1,
-                        //                        type: 'loop',
-                        drag: true,
-                        direction: 'auto'
-                    },
-                },
-            });
-            splide.mount();
+        $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.slider-nav'
+        });
+        $('.slider-nav').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            dots: true,
+            focusOnSelect: true,
+            mobileFirst: true,
+            infinite: false,
+            arrows: true,
+            vertical: true,
         });
 
-        var open_card = document.querySelectorAll('.slider_content');
-        [].forEach.call(open_card, function(el) {
-            el.onclick = function(e) {
-                for (var i = 0; i < open_card.length; i++) {
-                    open_card[i].classList.add('hide')
-                    open_card[i].classList.remove('show')
-                    el.classList.remove('hide');
-                }
-                el.classList.toggle('show');
-            }
-        });
-         var open_drop_down = document.querySelectorAll('.open_drop_down');
+        var open_drop_down = document.querySelectorAll('.user_box');
         [].forEach.call(open_drop_down, function(el) {
             el.onclick = function(e) {
-//                for (var i = 0; i < open_card.length; i++) {
-//                    open_card[i].classList.add('hide')
-//                    open_card[i].classList.remove('show')
-//                    el.classList.remove('hide');
-//                }
                 el.parentElement.classList.toggle('show');
             }
         });

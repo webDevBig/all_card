@@ -26,7 +26,7 @@ body {
 
 .card_page {
     width: 100vw;
-    height: 100vh;
+    /*    height: 100vh;*/
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -40,7 +40,7 @@ header {
     justify-content: center;
     align-items: center;
     background-color: black;
-    padding: 7px 22px;
+    padding: 10px 22px;
     position: relative;
     z-index: 10;
 }
@@ -64,8 +64,8 @@ header .logo {
     font-family: 'OCR A Extended';
     font-style: normal;
     font-weight: normal;
-    font-size: 13px;
-    line-height: 13px;
+    font-size: 15px;
+    line-height: 15px;
     color: #FFFFFF;
     text-decoration: none;
     cursor: pointer;
@@ -73,7 +73,7 @@ header .logo {
 
 header .logo img {
     margin: 0 3px 0 0;
-    max-width: 22px;
+    max-width: 32px;
 }
 
 header .menu {
@@ -88,8 +88,75 @@ header .menu_item {
     font-weight: bold;
     color: white;
     text-decoration: none;
-    margin: 0 0 0 10px;
+    margin: 0 0 0 40px;
     cursor: pointer;
+    letter-spacing: 0.5px;
+    padding: 10px 0;
+    border-top: 2px solid transparent;
+    transition: all .5s;
+}
+
+header .menu_item:hover,
+header .menu_item.active {
+    border-color: white;
+}
+
+/*drop down menu*/
+
+
+header .user_box {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.user_drop_down {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+}
+
+header .user_name {
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    margin: 0 15px 0 0px;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+}
+
+.user_drop_down img {
+    max-width: 37px;
+    cursor: pointer;
+}
+
+.user_drop_down .drop_down {
+    width: 150px;
+    padding: 20px;
+    background-color: black;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    top: calc(100% + 7px);
+    right: 0;
+}
+
+.user_drop_down.show .drop_down {
+    display: flex;
+}
+
+.user_drop_down .menu_item {
+    padding: 10px 0;
+    margin: 0;
+    border-bottom: 2px solid transparent;
+    border-top: none;
+    /*    width: 100%;*/
 }
 
 .main {
@@ -99,14 +166,14 @@ header .menu_item {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 43px 0 20px;
+    padding: 25px 0;
     margin: 0 auto;
 }
 
-.main .slider_section {
-    background-color: #E9E7E6;
+.main .slider-nav {
+    /*    background-color: #E9E7E6;*/
     width: 360px;
-    padding: 45px 35px 37px;
+    padding: 21px 35px;
 }
 
 .main .slider_header {
@@ -116,7 +183,8 @@ header .menu_item {
     justify-content: space-between;
     color: #001051;
     font-size: 14px;
-    margin: 0 0 21px;
+    padding: 0px 35px 5px;
+    /*    background-color: #E9E7E6;*/
 }
 
 .main .add {
@@ -133,12 +201,13 @@ header .menu_item {
     cursor: pointer;
 }
 
-.main .splide__slide {
+.main .slider_content {
     width: 100%;
     height: auto !important;
     margin: 7px 0;
     cursor: pointer;
     transition: all 1s;
+    position: relative;
 }
 
 .main .content {
@@ -148,7 +217,7 @@ header .menu_item {
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    background-color: #DCDCDC;
+    background-color: black;
     border-radius: 10px;
 }
 
@@ -159,10 +228,9 @@ header .menu_item {
 }
 
 .main .price {
-    color: #001051;
+    color: white;
     font-size: 13px;
     padding: 0px 4px;
-    background-color: #EBEBE9;
     margin: 0 3px 0 0;
     border-radius: 3px;
     font-weight: 500;
@@ -174,13 +242,13 @@ header .menu_item {
 }
 
 .main .currency {
-    color: #001051;
+    color: white;
     font-size: 9px;
-    padding: 1px 4px 0px;
-    background-color: #EBEBE9;
     text-transform: uppercase;
     border-radius: 2px;
     font-weight: 500;
+    line-height: 13px;
+
 }
 
 .main .card_info {
@@ -191,7 +259,7 @@ header .menu_item {
 
 .main .part_card_number {
     font-size: 9px;
-    color: rgba(0, 16, 81, 0.7);
+    color: white;
     margin: 0 11px 0 0;
     padding: 0 11px 0 0;
     border-right: 1px solid #D4D4D6;
@@ -201,76 +269,17 @@ header .menu_item {
     max-width: 26px;
 }
 
-.main .splide__track {
-    height: auto !important;
-}
 
-.main .transactions_box {
-    /*    max-width: 1118px;*/
-    max-width: 1560px;
-    width: 100%;
+.main .slider-for {
+    /*    max-width: 1560px;*/
+    /*    width: 100%;*/
+    width: 600px;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch;
     padding: 0 53px 0 44px;
-}
-
-.main .transactions_content {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-.main .title {
-    font-weight: bold;
-    color: black;
-    font-size: 18px;
-    margin: 0 0 17px;
-}
-
-.main .row {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 14px;
-    font-weight: 400;
-    padding: 17px 0;
-}
-
-.main .row p {
-    width: 30%;
-    text-align: center;
-}
-
-.main .text_medium {
-    font-weight: 500;
-}
-
-.main .row .date {
-    text-align: left;
-}
-
-.main .row .return {
-    width: 37%;
-    text-align: left;
-}
-
-.main .row .price_back {
-
-    text-align: right;
-}
-
-.main .text_regular {
-    font-weight: 400;
-    opacity: 0.8;
-}
-
-.main .text_bold {
-    font-weight: bold;
 }
 
 .main .see_all {
@@ -292,7 +301,7 @@ header .menu_item {
     outline: none;
 }
 
-.splide .active_card {
+.slider-nav .active_card {
     background: linear-gradient(0deg, #000000, #000000), rgba(255, 255, 255, 0.8);
     border: 0.5px solid #000000;
     box-shadow: inset 0px 0px 30px rgba(255, 255, 255, 0.1), inset 0px 1px 1px rgba(255, 255, 255, 0.15);
@@ -308,14 +317,14 @@ header .menu_item {
     font-family: 'OCR A Extended';
 }
 
-.splide .active_card .card_header {
+.slider-nav .active_card .card_header {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.splide .card_header .logo {
+.slider-nav .card_header .logo {
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
@@ -325,12 +334,12 @@ header .menu_item {
     align-items: center;
 }
 
-.splide .card_header img {
+.slider-nav .card_header img {
     max-width: 22px;
     margin: 0 3px 0 0;
 }
 
-.splide .card_header .balance {
+.slider-nav .card_header .balance {
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
@@ -338,7 +347,7 @@ header .menu_item {
     color: #FFFFFF;
 }
 
-.splide .active_card .card_number {
+.slider-nav .active_card .card_number {
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -350,21 +359,21 @@ header .menu_item {
     margin: 24px 0 0px;
 }
 
-.splide .active_card .card_footer {
+.slider-nav .active_card .card_footer {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.splide .active_card .ex_date_box {
+.slider-nav .active_card .ex_date_box {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
 }
 
-.splide .active_card .card_name {
+.slider-nav .active_card .card_name {
     font-style: normal;
     font-weight: normal;
     font-size: 8px;
@@ -373,7 +382,7 @@ header .menu_item {
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
-.splide .active_card .ex_date {
+.slider-nav .active_card .ex_date {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -382,19 +391,19 @@ header .menu_item {
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
-.splide .active_card .cars_type_img {
+.slider-nav .active_card .cars_type_img {
     max-width: 60px;
 }
 
-.main .show .content {
+.main .slick-current .content {
     display: none;
 }
 
-.main .show .active_card {
+.main .slick-current .active_card {
     display: flex;
 }
 
-.splide .balance_mobile {
+.slider-nav .balance_mobile {
     display: none;
     color: #707070;
     font-size: 20px;
@@ -403,15 +412,10 @@ header .menu_item {
     font-weight: 400;
 }
 
-.main .slider_content {
-    width: 99%;
-    margin: 0 4px 0 0;
-}
-
-.main .splide__slide:nth-of-type(3n) .slider_content.hide::after {
+.main .slider_content:nth-of-type(3n)::after {
     content: "1";
     color: white;
-    background-color: #D45056;
+    background-color: red;
     font-size: 6px;
     right: 0px;
     top: -3px;
@@ -424,6 +428,280 @@ header .menu_item {
     align-items: center;
 }
 
+.main .slick-current::after {
+    display: none !important;
+}
+
+.card_info_box {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 30px 0 20px;
+}
+
+.card_info_box .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 5px;
+}
+
+.card_info_box h1 {
+    font-size: 17px;
+    font-weight: bold;
+    color: black;
+}
+
+.card_info_box .details {
+    font-size: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    padding: 5px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.card_info_box .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 0;
+}
+
+.card_info_box .title {
+    font-size: 12px;
+    color: #919191;
+    font-weight: 400;
+    margin: 0;
+}
+
+.card_info_box .text {
+    color: black;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.main .slick-current .card_info_box {
+    display: flex;
+}
+
+.slider_box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    height: auto !important;
+}
+
+
+.main .accounts_box,
+.main .transactions_box {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px;
+    color: white;
+}
+
+.accounts_box .header,
+.transactions_box .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 30px;
+}
+
+.accounts_box .header h1,
+.transactions_box .header h1 {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+}
+
+.accounts_box .header .title {
+    font-size: 13px;
+    font-weight: 400;
+    color: #919191;
+}
+
+.accounts_box .row_info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 30px 0;
+    border-top: 1px solid white;
+}
+
+.accounts_box .card_name {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    margin: 0 0 20px;
+}
+
+.accounts_box .card_img {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 15px 0 0;
+}
+
+.accounts_box .note {
+    font-size: 11px;
+    font-weight: 400;
+    color: #919191;
+    margin: 0 0 30px;
+}
+
+.accounts_box .payment_box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.accounts_box .payment_box div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.accounts_box .payment_box .title {
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+    margin: 0 0 10px;
+}
+
+.accounts_box .payment .price,
+.accounts_box .rate_box .rate {
+    font-size: 18px;
+}
+
+.accounts_box .payment .price span,
+.accounts_box .rate_box .rate span {
+    color: #919191;
+    text-decoration: line-through;
+    font-size: 13px;
+    margin: 0 0 0 7px;
+}
+
+.transactions_box {
+    margin: 15px 0 0;
+}
+
+.transactions_box .select {
+    width: 45px;
+    border-radius: 4px;
+    background-color: #5D5C63;
+    color: white;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+.transactions_box .select:active,
+.transactions_box .select:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.transactions_box .row_info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.transactions_box .title {
+    color: #919191;
+    font-size: 14px;
+}
+
+.transactions_box .company_box {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.transactions_box .company_logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: red;
+    margin: 0 10px 0 0;
+}
+
+.transactions_box .company_name {
+    font-size: 16px;
+}
+
+.transactions_box .date {
+    font-size: 12px;
+    color: #919191;
+}
+
+.transactions_box .spend_balance {
+    font-size: 18px;
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+    padding: 10px 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer h1 {
+    color: white;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: flex-start;
+}
+
+footer h1 span {
+    font-size: 16px;
+    margin: 0 0 0 5px;
+}
+
+footer p {
+    color: #919191;
+    font-size: 16px;
+    display: flex;
+    align-items: flex-start;
+}
+
+footer p span {
+    font-size: 13px;
+    margin: 0 10px 0 5px;
+}
 
 /*mobile menu style*/
 .mobile_menu input {
@@ -496,7 +774,7 @@ header .menu_item {
 }
 
 .mobile_menu input:checked ~ nav {
-    transform: translate(0px, 44px);
+    transform: translate(0px, 30px);
     position: relative;
     height: 100%;
 }
@@ -508,58 +786,14 @@ header .menu_item {
     font-weight: 700;
     font-family: sans-serif;
     display: block;
-    padding: 30px;
+    padding: 15px;
     margin: 0;
 }
 
 
-/*drop down menu*/
-
-.user_drop_down {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    position: relative;
-}
-
-.user_drop_down img {
-    max-width: 37px;
-    cursor: pointer;
-}
-
-.user_drop_down .drop_down {
-    width: 150px;
-    padding: 20px;
-    background-color: black;
-    display: none;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    position: absolute;
-    top: calc(100% + 7px);
-    right: 0;
-}
-
-.user_drop_down.show .drop_down {
-    display: flex;
-}
-
-.user_drop_down .menu_item {
-    padding: 10px 0;
-    margin: 0;
-}
-
-@media all and (max-width:1920px) {
-    .main .transactions_box {
-        max-width: 1118px;
-    }
-}
-
-@media all and (max-width:1400px) {
-    .main .transactions_box {
-        max-width: 1118px;
-        width: 74%;
+@media all and (max-width:1024px) {
+    header .menu_item {
+        margin: 0 0 0 30px;
     }
 }
 
@@ -568,7 +802,7 @@ header .menu_item {
         padding: 45px 25px 37px;
     }
 
-    .main .transactions_box {
+    .main .slider-for {
         padding: 0 30px;
     }
 }
@@ -577,110 +811,79 @@ header .menu_item {
     .main {
         flex-direction: column;
         align-items: center;
-        padding: 0px 0 20px;
     }
 
-    .main .slider_section,
-    .main .splide__slide {
-        background-color: transparent;
-        margin: 0;
-    }
-
-    .main .content {
-        display: none;
-    }
-
-    .splide .active_card {
-        display: flex;
-    }
-
-    .main .active_card {
-        width: 280px;
-    }
-
-    .main .slider_content {
-        display: flex;
+    .slider_box {
         flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
 
-    .splide .balance_mobile {
-        display: block;
-        margin: 24px 0 0;
-    }
-
-    .main .transactions_box {
-        width: 100%;
-    }
-
-    header {
-        padding: 11px 22px;
-    }
-
-    .main .splide__slide:nth-of-type(3n) .slider_content.hide::after {
+    header .menu:first-of-type {
         display: none;
     }
-}
 
-@media all and (max-width:500px) {
-    .main .transactions_box {
-        padding: 0 15px;
-    }
-
-    header {
-        padding: 0;
-    }
-
-/*
-    header .menu {
-        display: none;
-    }
-*/
-
-/*
     header .mobile_menu {
         display: block;
         position: absolute;
         right: 0px;
-        top: 11px;
+        top: 18px;
     }
-*/
 
-    header .page_content {
+    .main .slider-nav {
+        padding: 21px 35px 0;
+    }
+
+    .main .accounts_box,
+    .main .transactions_box {
+        width: 100%;
+    }
+
+    .main .slider-for {
+        padding: 0;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .page_content {
+        padding: 10px 72px 10px 22px;
         background-color: black;
-        padding: 11px 22px;
-        width: 100%;
-        height: 100%;
     }
 
-    .main .row p,
-    .main .row .return {
-        width: auto;
+    header {
+        justify-content: flex-start;
+        padding: 0;
     }
 
-    .main .slider_section {
-        width: 100%;
-        padding: 45px 15px 37px;
+}
+
+@media all and (max-width:500px) {
+    header .user_name {
+        display: none;
     }
 
-    .main .slider_header {
-        font-size: 16px;
+    footer {
+        flex-direction: column;
+        padding: 20px 0;
     }
 
-    .main .add {
-        font-size: 12px;
+    footer p {
+        margin: 15px 0 0;
     }
 
-    .main .add span {
-        background-color: #f1f1f1;
-        font-size: 16px;
-    }
 }
 
 @media all and (max-width:340px) {
-    .main .row {
-        font-size: 12px;
-        padding: 15px 0;
+    .main .slider-nav {
+        width: 100%;
+        padding: 21px 20px 0;
+    }
+
+    .main .slider_header {
+        padding: 0px 20px 5px;
+    }
+
+    .main .accounts_box,
+    .main .transactions_box {
+        padding: 30px 20px
     }
 }
