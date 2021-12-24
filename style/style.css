@@ -490,8 +490,7 @@ header .user_name {
 
 .main .slider_content,
 .main .slider_content:active,
-.main .slider_content:focus
-    {
+.main .slider_content:focus {
     border: none;
     outline: none;
     box-shadow: none;
@@ -858,6 +857,7 @@ footer p span {
         background-repeat: no-repeat;
         background-position: center;
         background-size: 50%;
+        z-index: 10;
     }
 
     .slick-next {
@@ -872,6 +872,7 @@ footer p span {
         background-repeat: no-repeat;
         background-position: center;
         background-size: 50%;
+        z-index: 10;
     }
 
     .slick-arrow {
