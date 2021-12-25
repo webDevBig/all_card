@@ -607,7 +607,7 @@
 
     .slick-arrow {
         position: absolute;
-        top: 25%;
+        top: 100px;
     }
 
     .main .accounts_box,
@@ -668,7 +668,7 @@
     .main .slider-nav {
         width: 85%;
         max-width: 100vw;
-        padding: 0;
+        padding: 21px 0 0;
         margin: 0 auto;
     }
 
@@ -676,9 +676,10 @@
         margin: 20px 0 0;
     }
 
-    .slick-next,
-    .slick-prev {
-        margin: 20px 0 0
+
+    .slider-nav .active_card {
+        width: 88%;
+        margin: 0 auto;
     }
 }
 
