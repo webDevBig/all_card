@@ -288,7 +288,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 67px;
+    width: 70px;
 }
 
 .range_box .text span {
@@ -394,6 +394,12 @@ footer {
     font-weight: 400;
     color: #919191;
     width: 50%;
+}
+
+.section3 .fp-scrollable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media all and (max-width:1024px) {
@@ -562,7 +568,7 @@ footer {
 
 @media all and (max-width:600px) {
     .content_section {
-        max-width: 90%;
+        max-width: 80%;
         margin: 0 auto;
     }
 
@@ -576,12 +582,14 @@ footer {
     }
 
     #section0 .content_section {
-        height: 1400px;
+        height: 1250px;
+        margin: 100px auto;
+        padding: 0;
     }
 
     .section3 .row {
         flex-direction: column;
-        max-width: 80%;
+        width: 100%;
         align-items: center;
     }
 
