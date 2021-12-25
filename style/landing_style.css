@@ -1,0 +1,605 @@
+#section0,
+#section1,
+#section2,
+#section3 {
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header,
+footer {
+    position: fixed;
+}
+
+footer {
+    bottom: 0;
+}
+
+.content_section {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+}
+
+
+.login,
+.register {
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 4px;
+    margin: 0 10px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .5s;
+    width: 100px;
+}
+
+.login:hover,
+.register:hover {
+    background-color: white;
+    color: black;
+}
+
+
+#section0 {
+    background: #e7e7e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section0 .content_section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text_section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.text_section .h1 {
+    font-size: 70px;
+    color: black;
+    font-weight: bold;
+}
+
+.text_section .h1 span {
+    color: #5855E5;
+}
+
+.text_section .note {
+    font-size: 30px;
+    color: black;
+    max-width: 85%;
+    margin: 30px 0 20px;
+    font-weight: 400;
+}
+
+.text_section .list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 0 0 16px;
+}
+
+.text_section .list li {
+    color: black;
+    font-size: 16px;
+    padding: 10px;
+    width: 50%;
+    text-align: left;
+    position: relative;
+    list-style: none;
+}
+
+.text_section .list li::before {
+    content: '';
+    position: absolute;
+    background-image: url(../img/check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 13px;
+    height: 9px;
+    top: 40%;
+    left: -5%;
+}
+
+.card_section {
+    width: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card_section .bg_box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(167, 167, 167, 0.7);
+    border-radius: 15px;
+    margin: 0 0 15px;
+}
+
+.card_section .bg_box:last-of-type {
+    margin: 0;
+}
+
+.card_section .card {
+    background: linear-gradient(0deg, #000000, #000000), rgba(255, 255, 255, 0.8);
+    border: 0.5px solid #000000;
+    box-shadow: inset 0px 0px 30px rgba(255, 255, 255, 0.1), inset 0px 1px 1px rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(50px);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 320px;
+    height: 190px;
+    padding: 14px 15px;
+    font-family: 'OCR A Extended';
+}
+
+.card_section .card .card_header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card_section .card_header .logo {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+}
+
+.card_section .card_header img {
+    max-width: 30px;
+    margin: 0 5px 0 0;
+}
+
+.card_section .card_header .balance {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.card_section .card .card_number {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 26px;
+    width: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
+    margin: 24px 0 0px;
+}
+
+.card_section .card .card_footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card_section .card .ex_date_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.card_section .card .card_name {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 11px;
+    color: #FFFFFF;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.card_section .card .ex_date {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.card_section .card .cars_type_img {
+    max-width: 72px;
+}
+
+.card_section .note {
+    color: #707070;
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+.range_box {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.range_box .range {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.range_box .range .select {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #c3c3c3;
+    transition: all .5s;
+}
+
+.range_box .range .select.active {
+    background-color: black;
+}
+
+.range_box .range hr {
+    height: 3px;
+    width: 37%;
+    background-color: #c3c3c3;
+    border: none;
+}
+
+.range_box .text {
+    color: black;
+    width: 350px;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 7px 0 0;
+}
+
+.range_box .text p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 67px;
+}
+
+.range_box .text span {
+    color: #707070;
+}
+
+.delivery {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delivery div {
+    display: flex;
+}
+
+.delivery .note {
+    margin: 0;
+    font-size: 15px;
+}
+
+.delivery .method_select {
+    color: #707070;
+    margin: 0 10px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.delivery .method_select.active {
+    color: black;
+}
+
+.bg_box .email_input {
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 4px;
+    height: 30px;
+    width: 70%;
+    font-size: 15px;
+    padding: 0 10px;
+}
+
+.bg_box .email_input:active,
+.bg_box .email_input:focus {
+    outline: none;
+}
+
+#section2 {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/iPhone.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20%;
+}
+
+#section2 img {
+    max-width: 30%;
+}
+
+
+.section3 {
+    background: white;
+    padding: 5vw;
+    color: black;
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3 .content_section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3 .row {
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-top: 1px solid #A6A6A6;
+    padding: 50px 0;
+}
+
+.section3 .note_box {
+    width: 28%;
+}
+
+.section3 .note {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.section3 .text_box {
+    font-size: 20px;
+    font-weight: 400;
+    color: #919191;
+    width: 50%;
+}
+
+@media all and (max-width:1024px) {
+    .content_section {
+        max-width: 800px;
+    }
+
+    .text_section .h1 {
+        font-size: 50px;
+    }
+
+    .text_section .note {
+        font-size: 21px;
+        margin: 20px 0 10px;
+    }
+
+    .text_section .list li {
+        font-size: 14px;
+        padding: 7px;
+    }
+
+    .card_section .card_header .logo,
+    .card_section .card_header .balance {
+        font-size: 13px;
+        line-height: 13px;
+    }
+
+    .card_section .card_header img {
+        max-width: 27px;
+        margin: 0 3px 0 0;
+    }
+
+    .card_section .card .card_number {
+        font-size: 21px;
+        line-height: 21px;
+        margin: 14px 0 0px;
+    }
+
+    .card_section .card .ex_date {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .card_section .card .card_name {
+        font-size: 8px;
+        line-height: 8px;
+    }
+
+    .card_section .card .cars_type_img {
+        max-width: 60px;
+    }
+
+    .card_section .card {
+        width: 280px;
+        height: 170px;
+    }
+
+    .card_section {
+        width: 325px;
+    }
+
+    .range_box .text {
+        width: 300px;
+    }
+
+    .range_box {
+        width: 100%;
+    }
+
+    .card_section .bg_box {
+        padding: 15px;
+    }
+
+    .section3 .note {
+        font-size: 28px;
+    }
+
+    .section3 .row {
+        width: 700px;
+        padding: 30px 0;
+    }
+
+    .section3 .text_box {
+        font-size: 15px;
+    }
+
+}
+
+@media all and (max-width:800px) {
+    header .menu {
+        display: none;
+    }
+
+    #section0 .content_section {
+        flex-direction: column;
+    }
+
+    .fp-auto-height.fp-section,
+    .fp-auto-height .fp-slide,
+    .fp-auto-height .fp-tableCell {
+        height: auto !important;
+    }
+
+    #section0 {
+        /*        padding: 100px 0;*/
+    }
+
+    #section0 .content_section {
+        padding: 100px 0 500px;
+        height: 1200px;
+        justify-content: flex-start;
+    }
+
+    .text_section {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text_section .h1 {
+        font-size: 40px;
+    }
+
+    .text_section .note {
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    .text_section .list {
+        flex-direction: column;
+    }
+
+    .text_section .list li {
+        width: 100%;
+    }
+
+    .text_section .list li::before {
+        left: -10%;
+    }
+
+    .card_section .bg_box:first-of-type {
+        margin: 30px 0 15px;
+    }
+
+    .section3 .row {
+        width: 500px;
+        padding: 30px 0;
+    }
+
+    .section3 .note {
+        font-size: 25px;
+    }
+
+    .section3 .text_box {
+        font-size: 13px;
+    }
+
+    .section3 .note_box {
+        width: 37%;
+    }
+
+    .section3 .fp-scrollable {
+        height: auto !important;
+    }
+}
+
+@media all and (max-width:600px) {
+    .content_section {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .text_section .h1,
+    .text_section .note {
+        text-align: center;
+    }
+
+    .text_section .note {
+        max-width: 300px;
+    }
+
+    #section0 .content_section {
+        height: 1400px;
+    }
+
+    .section3 .row {
+        flex-direction: column;
+        max-width: 80%;
+        align-items: center;
+    }
+
+    .section3 .note {
+        text-align: center;
+        margin: 0 0 20px;
+    }
+
+    .section3 .note_box {
+        width: 100%;
+    }
+
+    .section3 .text_box {
+        width: 100%;
+    }
+
+    .section3 {
+        align-items: center;
+        padding: 44px 0 108px;
+    }
+}
