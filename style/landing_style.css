@@ -585,6 +585,11 @@ footer {
         height: auto;
         margin: 100px auto;
         padding: 0;
+        width: 100%;
+    }
+
+    .card_section .bg_box:first-of-type {
+        margin: 0px 0 15px;
     }
 
     .section3 .row {
