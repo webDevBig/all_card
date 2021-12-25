@@ -582,7 +582,7 @@ footer {
     }
 
     #section0 .content_section {
-        height: 1250px;
+        height: auto;
         margin: 100px auto;
         padding: 0;
     }
@@ -600,6 +600,10 @@ footer {
 
     .section3 .note_box {
         width: 100%;
+    }
+
+    .text_section {
+        display: none;
     }
 
     .section3 .text_box {
