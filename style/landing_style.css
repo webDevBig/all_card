@@ -588,7 +588,7 @@ footer {
     .fp-auto-height.fp-section,
     .fp-auto-height .fp-slide,
     .fp-auto-height .fp-tableCell {
-/*        height: 100vh !important;*/
+        height: 100vh !important;
     }
 
     .content_section {
@@ -606,11 +606,15 @@ footer {
     }
 
     #section0 .content_section {
-        height: 100vh;
+        height: 100%;
         width: 100%;
         padding: 0;
         justify-content: center;
         max-width: 100%;
+    }
+    .card_section
+    {
+        padding: 60px 0;
     }
 
     .card_section .bg_box:first-of-type {
