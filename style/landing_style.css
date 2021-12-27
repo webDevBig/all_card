@@ -588,7 +588,7 @@ footer {
     .fp-auto-height.fp-section,
     .fp-auto-height .fp-slide,
     .fp-auto-height .fp-tableCell {
-        height: 100vh !important;
+        /*        height: 100vh !important;*/
     }
 
     .content_section {
@@ -607,9 +607,10 @@ footer {
 
     #section0 .content_section {
         height: auto;
-/*        margin: 52px auto 107px;*/
-/*        padding: 0 0 54px;*/
+        /*        margin: 52px auto 107px;*/
+        /*        padding: 0;*/
         width: 100%;
+        padding: 60px 0 100px;
     }
 
     .card_section .bg_box:first-of-type {
@@ -660,5 +661,17 @@ footer {
 
     .section3 .text_box {
         font-size: 12px;
+    }
+}
+
+@media all and (max-width:340px) {
+
+    .card_section,
+    .section3 .row {
+        width: 96%;
+    }
+
+    .content_section {
+        max-width: 100%;
     }
 }

@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <div class="page_content">
             <a class="logo" href="landing_page.html">
                 <img alt="logo" src="img/logo.png">
@@ -171,7 +171,7 @@
         </div>
     </div>
 
-    <footer>
+    <footer id="footer">
         <h1>Almeria <span>©</span></h1>
         <p>Almeria <span>©</span> All right recerved 2021</p>
     </footer>
@@ -184,7 +184,7 @@
             verticalCentered: false,
 
             //to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
-            css3: false,
+            css3: true,
             slidesNavigation: true,
             scrollOverflow: true,
             scrollOverflowReset: true,
@@ -202,16 +202,19 @@
                 el.classList.toggle('active');
             }
         });
-//        var select_method = document.querySelectorAll('.method_select');
-//        [].forEach.call(select_method, function(el) {
-//            el.onclick = function(e) {
-//                for (var i = 0; i < select_method.length; i++) {
-//                    select_method[i].classList.add('non-active')
-//                    select_method[i].classList.remove('active')
-//                    el.classList.remove('non-active');
-//                }
-//                el.classList.toggle('active');
-//            }
-//        });
+        //        var select_method = document.querySelectorAll('.method_select');
+        //        [].forEach.call(select_method, function(el) {
+        //            el.onclick = function(e) {
+        //                for (var i = 0; i < select_method.length; i++) {
+        //                    select_method[i].classList.add('non-active')
+        //                    select_method[i].classList.remove('active')
+        //                    el.classList.remove('non-active');
+        //                }
+        //                el.classList.toggle('active');
+        //            }
+        //        });
+
     </script>
-</body></html>
+</body>
+
+</html>
