@@ -266,7 +266,7 @@ footer {
 }
 
 .range_box {
-    width: 350px;
+    width: 320px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -299,13 +299,115 @@ footer {
     border: none;
 }
 
+.slider-area {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+}
+
+.slider-area .slider-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.slider-area-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+}
+
+.slider-area #skip-value-lower,
+.slider-area #skip-value-upper {
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-area .noUi-target {
+    flex: 1;
+    position: relative;
+    background: black;
+    border-radius: 50px;
+}
+
+.slider-area .noUi-target.noUi-horizontal {
+    height: 3px;
+}
+
+.slider-area .noUi-target .noUi-base,
+.slider-area .noUi-target .noUi-connects {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.slider-area .noUi-target .noUi-connects {
+    border-radius: 3px;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.slider-area .noUi-target .noUi-connects .noUi-connect {
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform-origin: 0 0;
+    transform-style: flat;
+    background-color: #c3c3c3;
+}
+
+.slider-area .noUi-target .noUi-origin {
+    will-change: transform;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    height: 0;
+    width: 100%;
+}
+
+.slider-area .noUi-target .noUi-origin .noUi-handle {
+    border-radius: 50px;
+    background: black;
+    cursor: default;
+    background-color: black;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    right: -10px;
+    top: -4px;
+}
+
+.slider-area .noUi-target .noUi-origin .noUi-handle .noUi-touch-area {
+    height: 100%;
+    width: 100%;
+}
+
+.slider-area .noUi-target .noUi-origin .noUi-handle-upper:last-of-type {
+    display: none;
+}
+
+.slider-area .noUi-draggable {
+    cursor: ew-resize;
+}
+
+
 .range_box .text {
     color: black;
     width: 350px;
     font-size: 14px;
     font-weight: bold;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin: 7px 0 0;
 }
@@ -315,7 +417,6 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 70px;
 }
 
 .range_box .text span {
@@ -334,7 +435,7 @@ footer {
 }
 
 .delivery .select {
-    width: 80px;
+    width: 60%;
     border-radius: 4px;
     background-color: #e7e7e7;
     color: black;
@@ -344,7 +445,7 @@ footer {
     padding: 5px;
     -webkit-appearance: none;
     background-image: url(../img/arrow-down-black.png);
-    background-position: 83% 50%;
+    background-position: 93% 50%;
     background-repeat: no-repeat;
     background-size: 10px;
 }
@@ -371,7 +472,7 @@ footer {
     border: 1px solid black;
     border-radius: 4px;
     height: 30px;
-    width: 70%;
+    width: 60%;
     font-size: 15px;
     padding: 0 10px;
 }
@@ -423,12 +524,12 @@ footer {
 }
 
 .section3 .note {
-    font-size: 22px;
+    font-size: 30px;
     font-weight: 600;
 }
 
 .section3 .text_box {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 400;
     color: #919191;
     width: 50%;
@@ -569,20 +670,20 @@ footer {
     }
 
     .section3 .row {
-        width: 500px;
+        width: 80%;
         padding: 20px 0;
-    }
-
-    .section3 .note {
-        font-size: 18px;
-    }
-
-    .section3 .text_box {
-        font-size: 13px;
     }
 
     .section3 .fp-scrollable {
         height: auto !important;
+    }
+
+    .section3 .note_box {
+        width: 36%;
+    }
+
+    slider-area .noUi-target .noUi-origin .noUi-handle {
+        top: -5px;
     }
 }
 
@@ -662,6 +763,8 @@ footer {
         padding: 52px 0 108px;
     }
 
+    /*
+
     .section3 .note {
         font-size: 15px;
         margin: 0 0 10px;
@@ -670,6 +773,7 @@ footer {
     .section3 .text_box {
         font-size: 12px;
     }
+*/
 }
 
 @media all and (max-width:340px) {
@@ -755,11 +859,11 @@ footer {
 
     .card_section,
     .section3 .row {
-/*        width: 96%;*/
+        /*        width: 96%;*/
     }
 
     .content_section {
-/*        max-width: 100%;*/
+        /*        max-width: 100%;*/
     }
 
     .card_section .card_header .logo,

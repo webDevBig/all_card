@@ -55,7 +55,7 @@
             </nav>
         </div>
     </header>
-<!--fp-section fp-table fp-auto-height -->
+    <!--fp-section fp-table fp-auto-height -->
     <div id="fullpage">
         <div class="section  " id="section0">
             <div class="content_section">
@@ -89,22 +89,16 @@
                         <p class="note">Select gift card mount</p>
                         <div class="range_box">
                             <div class="range">
-                                <span class="select active"></span>
-                                <hr>
-                                <span class="select"></span>
-                                <hr>
-                                <span class="select"></span>
+                                <div class="slider-area">
+                                    <div class="slider-area-wrapper">
+                                        <div id="skipstep" class="slider"></div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="text">
-                                <p>$50
-                                    <span>today</span>
-                                </p>
-                                <p>$250
-                                    <span>in 30 days</span>
-                                </p>
-                                <p>$500
-                                    <span>in 60 days</span>
-                                </p>
+                                <p>$</p>
+                                <p id="skip-value-lower">$50</p>
+                                <span id="skip-value-upper" style="display: none"></span>
                             </div>
                         </div>
                     </div>
@@ -143,22 +137,11 @@
                         <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos corrupti dolore recusandae illo, esse quas autem a illum sapiente adipisci excepturi sed laudantium ad tenetur, odit voluptas, quia veniam. Ex!</p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="note_box">
-                        <h3 class="note">More solutions and offers just for you</h3>
-                    </div>
-                    <div class="text_box">
-                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos corrupti dolore recusandae illo, esse quas autem a illum sapiente adipisci excepturi sed laudantium ad tenetur, odit voluptas, quia veniam. Ex!</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="note_box">
-                        <h3 class="note">Spend and save smarter</h3>
-                    </div>
-                    <div class="text_box">
-                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos corrupti dolore recusandae illo, esse quas autem a illum sapiente adipisci excepturi sed laudantium ad tenetur, odit voluptas, quia veniam. Ex!</p>
-                    </div>
-                </div>
+            </div>
+        </div>
+
+        <div class="section section3" id="section4">
+            <div class="content_section">
                 <div class="row">
                     <div class="note_box">
                         <h3 class="note">More solutions and offers just for you</h3>
@@ -169,6 +152,34 @@
                 </div>
             </div>
         </div>
+
+        <div class="section section3" id="section5">
+            <div class="content_section">
+                <div class="row">
+                    <div class="note_box">
+                        <h3 class="note">Spend and save smarter</h3>
+                    </div>
+                    <div class="text_box">
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos corrupti dolore recusandae illo, esse quas autem a illum sapiente adipisci excepturi sed laudantium ad tenetur, odit voluptas, quia veniam. Ex!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section section3" id="section6">
+            <div class="content_section">
+                <div class="row">
+                    <div class="note_box">
+                        <h3 class="note">More solutions and offers just for you</h3>
+                    </div>
+                    <div class="text_box">
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos corrupti dolore recusandae illo, esse quas autem a illum sapiente adipisci excepturi sed laudantium ad tenetur, odit voluptas, quia veniam. Ex!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 
     <footer id="footer">
@@ -178,6 +189,38 @@
 
     <script type="text/javascript" src="script/fullpage.min.js"></script>
     <script type="text/javascript" src="script/scrolloverflow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
+    <script>
+        var skipSlider = document.getElementById("skipstep");
+        var skipValues = [
+            document.getElementById("skip-value-lower"),
+            document.getElementById("skip-value-upper")
+        ];
+
+        noUiSlider.create(skipSlider, {
+            start: [50, 500],
+            connect: true,
+            behaviour: "drag",
+            step: 1,
+            range: {
+                min: 50,
+                max: 500
+            },
+            format: {
+                from: function(value) {
+                    return parseInt(value);
+                },
+                to: function(value) {
+                    return parseInt(value);
+                }
+            }
+        });
+
+        skipSlider.noUiSlider.on("update", function(values, handle) {
+            skipValues[handle].innerHTML = values[handle];
+        });
+
+    </script>
 
     <script type="text/javascript">
         var myFullpage = new fullpage('#fullpage', {
@@ -186,33 +229,10 @@
             //to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
             css3: true,
             slidesNavigation: true,
-//            scrollOverflow: true,
-//            scrollOverflowReset: true,
-//            scrollOverflowResetKey: 'YWx2YXJvdHJpZ28uY29tXzlRaGMyTnliMnhzVDNabGNtWnNiM2RTWlhObGRBPT14Ykk='
+            //            scrollOverflow: true,
+            //            scrollOverflowReset: true,
+            //            scrollOverflowResetKey: 'YWx2YXJvdHJpZ28uY29tXzlRaGMyTnliMnhzVDNabGNtWnNiM2RTWlhObGRBPT14Ykk='
         });
-
-        var select = document.querySelectorAll('.select');
-        [].forEach.call(select, function(el) {
-            el.onclick = function(e) {
-                for (var i = 0; i < select.length; i++) {
-                    select[i].classList.add('non-active')
-                    select[i].classList.remove('active')
-                    el.classList.remove('non-active');
-                }
-                el.classList.toggle('active');
-            }
-        });
-        //        var select_method = document.querySelectorAll('.method_select');
-        //        [].forEach.call(select_method, function(el) {
-        //            el.onclick = function(e) {
-        //                for (var i = 0; i < select_method.length; i++) {
-        //                    select_method[i].classList.add('non-active')
-        //                    select_method[i].classList.remove('active')
-        //                    el.classList.remove('non-active');
-        //                }
-        //                el.classList.toggle('active');
-        //            }
-        //        });
 
     </script>
 </body>
