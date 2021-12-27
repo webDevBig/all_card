@@ -529,8 +529,10 @@ footer {
     }
 
     #section0 .content_section {
+/*
         padding: 100px 0 500px;
         height: 1200px;
+*/
         justify-content: flex-start;
     }
 
@@ -538,6 +540,7 @@ footer {
         width: 100%;
         justify-content: center;
         align-items: center;
+        display: none;
     }
 
     .text_section .h1 {
@@ -585,11 +588,13 @@ footer {
 
 @media all and (max-width:600px) {
 
+    /*
     .fp-auto-height.fp-section,
     .fp-auto-height .fp-slide,
     .fp-auto-height .fp-tableCell {
         height: 100vh !important;
     }
+*/
 
     .content_section {
         max-width: 80%;
@@ -605,6 +610,7 @@ footer {
         max-width: 300px;
     }
 
+/*
     #section0 .content_section {
         height: 100%;
         width: 100%;
@@ -612,9 +618,10 @@ footer {
         justify-content: center;
         max-width: 100%;
     }
-    .card_section
-    {
-        margin: 60px 0;
+*/
+
+    .card_section {
+        /*        margin: 60px 0;*/
     }
 
     .card_section .bg_box:first-of-type {
