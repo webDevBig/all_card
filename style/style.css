@@ -6,6 +6,7 @@
 
 .card_page {
     width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -20,6 +21,8 @@
     align-items: flex-start;
     padding: 25px 0;
     margin: 0 auto;
+    height: auto;
+    overflow-x: scroll;
 }
 
 .main .slider-nav {
