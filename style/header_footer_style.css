@@ -32,8 +32,9 @@ header {
     align-items: center;
     background-color: black;
     padding: 10px 22px;
-    position: relative;
+    position: fixed;
     z-index: 10;
+    top: 0;
 }
 
 
@@ -166,6 +167,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    bottom: 0;
 }
 
 footer h1 {
