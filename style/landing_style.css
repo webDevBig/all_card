@@ -745,7 +745,115 @@ footer {
         margin: 0 0 9px;
     }
 
-    margin: 0 0 9px;
+    .card_section .bg_box:first-of-type {
+        margin: 0 0 9px;
+    }
 
+}
+
+@media all and (max-height:550px) {
+
+    .card_section,
+    .section3 .row {
+        width: 96%;
+    }
+
+    .content_section {
+        max-width: 100%;
+    }
+
+    .card_section .card_header .logo,
+    .card_section .card_header .balance {
+        font-size: 11px;
+        line-height: 11px;
+    }
+
+    .card_section .card_header img {
+        max-width: 22px;
+    }
+
+    .card_section .card .card_number {
+        font-size: 18px;
+        line-height: 18px;
+        margin: 14px 0 0px;
+    }
+
+    .card_section .card {
+        width: 249px;
+        height: 152px;
+    }
+
+    .card_section .card .cars_type_img {
+        max-width: 53px;
+    }
+
+    .card_section .card .card_name {
+        font-size: 7px;
+        line-height: 7px;
+    }
+
+    .card_section .card .ex_date {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .range_box .text {
+        font-size: 13px;
+    }
+
+    .delivery .note {
+        font-size: 13px;
+    }
+
+    .card_section .note {
+        font-size: 12px;
+        margin: 7px 0;
+    }
+
+    .bg_box .email_input {
+        height: 28px;
+        font-size: 13px;
+    }
+
+    .delivery .select {
+        font-size: 13px;
+    }
+
+    .card_section .bg_box {
+        padding: 7px 15px;
+        margin: 0 0 5px;
+    }
+
+    .card_section .bg_box:first-of-type {
+        margin: 5px 0;
+    }
+
+    footer h1 {
+        font-size: 15px;
+    }
+
+    footer p {
+        margin: 0px 0 0;
+        font-size: 11px;
+    }
+
+    footer {
+        bottom: 0;
+        flex-direction: row;
+        padding: 7px;
+    }
+
+    .section3 .text_box {
+        font-size: 11px;
+    }
+
+    .section3 .note {
+        font-size: 14px;
+        margin: 0 0 10px;
+    }
+
+    .section3 {
+        padding: 0;
+    }
 
 }
