@@ -719,6 +719,10 @@
         background-color: black;
     }
 
+    .transactions_box .row_info {
+        padding: 5px 0;
+    }
+
 }
 
 @media all and (max-width:375px) {
@@ -748,5 +752,9 @@
     .main .accounts_box,
     .main .transactions_box {
         padding: 30px 20px
+    }
+
+    .transactions_box .all_transactions {
+        padding: 0;
     }
 }
