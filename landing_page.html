@@ -111,10 +111,10 @@
                     <div class="bg_box">
                         <div class="delivery">
                             <p class="note">Delivery method</p>
-                            <div>
-                                <p class="method_select active">Email</p>
-                                <p class="method_select">SMS</p>
-                            </div>
+                            <select class="select">
+                                <option>Email</option>
+                                <option>SMS</option>
+                            </select>
                         </div>
                     </div>
                     <div class="bg_box">
@@ -123,12 +123,15 @@
                             <input type="email" value="" class="email_input">
                         </div>
                     </div>
+                    <div class="bg_box">
+                        <input type="text" class="btn" value="Payer">
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="section" id="section2">
-            <!--            <img alt="" src="img/iPhone.png">-->
+            <img alt="" src="img/iPhone.png">
         </div>
         <div class="section section3" id="section3">
             <div class="content_section">
@@ -148,11 +151,6 @@
                         <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos corrupti dolore recusandae illo, esse quas autem a illum sapiente adipisci excepturi sed laudantium ad tenetur, odit voluptas, quia veniam. Ex!</p>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="section section3" id="section4">
-            <div class="content_section">
                 <div class="row">
                     <div class="note_box">
                         <h3 class="note">Spend and save smarter</h3>
@@ -171,7 +169,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 
     <footer>
@@ -205,19 +202,16 @@
                 el.classList.toggle('active');
             }
         });
-        var select_method = document.querySelectorAll('.method_select');
-        [].forEach.call(select_method, function(el) {
-            el.onclick = function(e) {
-                for (var i = 0; i < select_method.length; i++) {
-                    select_method[i].classList.add('non-active')
-                    select_method[i].classList.remove('active')
-                    el.classList.remove('non-active');
-                }
-                el.classList.toggle('active');
-            }
-        });
-
+//        var select_method = document.querySelectorAll('.method_select');
+//        [].forEach.call(select_method, function(el) {
+//            el.onclick = function(e) {
+//                for (var i = 0; i < select_method.length; i++) {
+//                    select_method[i].classList.add('non-active')
+//                    select_method[i].classList.remove('active')
+//                    el.classList.remove('non-active');
+//                }
+//                el.classList.toggle('active');
+//            }
+//        });
     </script>
-</body>
-
-</html>
+</body></html>

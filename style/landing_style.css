@@ -136,6 +136,33 @@ footer {
 
 .card_section .bg_box:last-of-type {
     margin: 0;
+    box-shadow: none;
+    padding: 0;
+    border-radius: 0px;
+}
+
+.card_section .btn {
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 4px;
+    padding: 8px 0;
+    border: 1px solid black;
+    cursor: pointer;
+    outline: none;
+    transition: all .4s;
+}
+
+.card_section .btn:active,
+.card_section .btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.card_section .btn:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
 }
 
 .card_section .card {
@@ -306,6 +333,22 @@ footer {
     display: flex;
 }
 
+.delivery .select {
+    width: 80px;
+    border-radius: 4px;
+    background-color: #e7e7e7;
+    color: black;
+    font-size: 14px;
+    border: 1px solid black;
+    outline: none;
+    padding: 5px;
+    -webkit-appearance: none;
+    background-image: url(../img/arrow-down.png);
+    background-position: 83% 50%;
+    background-repeat: no-repeat;
+    background-size: 10px;
+}
+
 .delivery .note {
     margin: 0;
     font-size: 15px;
@@ -344,20 +387,22 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    /*
     background-image: url(../img/iPhone.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 20%;
+*/
 }
 
 #section2 img {
-    max-width: 30%;
+    max-width: 20%;
 }
 
 
 .section3 {
     background: white;
-    padding: 5vw;
+    /*    padding: 5vw;*/
     color: black;
     font-family: 'Red Hat Display', sans-serif;
     display: flex;
@@ -377,7 +422,7 @@ footer {
     justify-content: space-between;
     align-items: flex-start;
     border-top: 1px solid #A6A6A6;
-    padding: 50px 0;
+    padding: 30px 0;
 }
 
 .section3 .note_box {
@@ -385,12 +430,12 @@ footer {
 }
 
 .section3 .note {
-    font-size: 35px;
+    font-size: 22px;
     font-weight: 600;
 }
 
 .section3 .text_box {
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 400;
     color: #919191;
     width: 50%;
@@ -473,6 +518,7 @@ footer {
         padding: 15px;
     }
 
+    /*
     .section3 .note {
         font-size: 28px;
     }
@@ -485,6 +531,7 @@ footer {
     .section3 .text_box {
         font-size: 15px;
     }
+*/
 
 }
 
@@ -501,10 +548,6 @@ footer {
     .fp-auto-height .fp-slide,
     .fp-auto-height .fp-tableCell {
         height: auto !important;
-    }
-
-    #section0 {
-        /*        padding: 100px 0;*/
     }
 
     #section0 .content_section {
@@ -546,20 +589,22 @@ footer {
 
     .section3 .row {
         width: 500px;
-        padding: 30px 0;
+        padding: 20px 0;
     }
 
     .section3 .note {
-        font-size: 25px;
+        font-size: 18px;
     }
 
     .section3 .text_box {
         font-size: 13px;
     }
 
+    /*
     .section3 .note_box {
         width: 37%;
     }
+*/
 
     .section3 .fp-scrollable {
         height: auto !important;
@@ -567,6 +612,13 @@ footer {
 }
 
 @media all and (max-width:600px) {
+
+    .fp-auto-height.fp-section,
+    .fp-auto-height .fp-slide,
+    .fp-auto-height .fp-tableCell {
+        height: 100vh !important;
+    }
+
     .content_section {
         max-width: 80%;
         margin: 0 auto;
@@ -583,7 +635,7 @@ footer {
 
     #section0 .content_section {
         height: auto;
-        margin: 100px auto;
+        margin: 52px auto 107px;
         padding: 0;
         width: 100%;
     }
@@ -591,6 +643,13 @@ footer {
     .card_section .bg_box:first-of-type {
         margin: 0px 0 15px;
     }
+
+    .card_section .bg_box {
+        padding: 10px 15px;
+    }
+    #section2 img {
+    max-width: 30%;
+}
 
     .section3 .row {
         flex-direction: column;
