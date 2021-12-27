@@ -588,7 +588,7 @@ footer {
     .fp-auto-height.fp-section,
     .fp-auto-height .fp-slide,
     .fp-auto-height .fp-tableCell {
-        height: 100vh !important;
+/*        height: 100vh !important;*/
     }
 
     .content_section {
