@@ -392,6 +392,13 @@ footer {
     width: 100%;
 }
 
+.slider-area .noUi-target .noUi-origin .noUi-handle .noUi-touch-area:active,
+.slider-area .noUi-target .noUi-origin .noUi-handle .noUi-touch-area:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
 .slider-area .noUi-target .noUi-origin .noUi-handle-upper:last-of-type {
     display: none;
 }
