@@ -320,18 +320,23 @@ footer p span {
 
 }
 
-@media all and (max-width:500px) {
+@media all and (max-width:600px) {
     header .user_name {
         display: none;
     }
 
     footer {
         flex-direction: column;
-        padding: 20px 0;
+        padding: 15px 0;
     }
 
     footer p {
-        margin: 15px 0 0;
+        margin: 0px 0 0;
+        font-size: 14px;
+    }
+
+    footer h1 {
+        font-size: 20px;
     }
 
 }
