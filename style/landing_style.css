@@ -614,7 +614,7 @@ footer {
     }
     .card_section
     {
-        padding: 60px 0;
+        margin: 60px 0;
     }
 
     .card_section .bg_box:first-of-type {
