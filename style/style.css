@@ -623,6 +623,15 @@
         position: relative;
     }
 
+    .slider-nav .active_card .card_number {
+        font-size: 18px;
+        line-height: 19px;
+    }
+
+    .slider-nav .active_card {
+        height: 180px;
+    }
+
     .slick-prev {
         left: -20px;
         width: 30px;
