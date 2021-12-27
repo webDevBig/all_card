@@ -390,10 +390,15 @@ footer {
 .slider-area .noUi-target .noUi-origin .noUi-handle .noUi-touch-area {
     height: 100%;
     width: 100%;
+    outline: none;
+    border: none;
+    box-shadow: none;
 }
 
 .slider-area .noUi-target .noUi-origin .noUi-handle .noUi-touch-area:active,
-.slider-area .noUi-target .noUi-origin .noUi-handle .noUi-touch-area:focus {
+.slider-area .noUi-target .noUi-origin .noUi-handle .noUi-touch-area:focus,
+.slider-area .noUi-target .noUi-origin .noUi-handle:active,
+.slider-area .noUi-target .noUi-origin .noUi-handle:focus {
     outline: none;
     border: none;
     box-shadow: none;
