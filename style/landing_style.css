@@ -606,9 +606,10 @@ footer {
     }
 
     #section0 .content_section {
-        height: auto;
+        height: 100vh;
         width: 100%;
         padding: 0px;
+        justify-content: center;
     }
 
     .card_section .bg_box:first-of-type {
