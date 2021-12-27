@@ -598,12 +598,17 @@
     .main {
         padding: 0;
     }
+
 }
 
 @media all and (max-width:800px) {
     .main {
         flex-direction: column;
         align-items: center;
+    }
+
+    .main .slider_header {
+        padding: 21px 35px 5px;
     }
 
     .slider_box {
@@ -728,7 +733,7 @@
 
 @media all and (max-width:340px) {
     .main .slider_header {
-        padding: 0px 20px 5px;
+        padding: 20px 20px 5px;
     }
 
     .main .accounts_box,
