@@ -19,7 +19,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-/*    padding: 60px 0 50px;*/
+    /*    padding: 60px 0 50px;*/
     margin: 0 auto;
     height: auto;
     overflow-x: auto;
@@ -610,6 +610,10 @@
 
     .main .slider_header {
         padding: 21px 35px 5px;
+    }
+
+    .main .slider_content:nth-of-type(3n)::after {
+        display: none;
     }
 
     .slider_box {
