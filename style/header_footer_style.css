@@ -32,9 +32,9 @@ header {
     align-items: center;
     background-color: black;
     padding: 10px 22px;
-    position: fixed;
+/*    position: fixed;*/
     z-index: 10;
-    top: 0;
+/*    top: 0;*/
 }
 
 
@@ -167,7 +167,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
+/*    position: fixed;*/
     bottom: 0;
 }
 
